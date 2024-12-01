@@ -1,0 +1,15 @@
+matplotlib
+numpy
+pandas
+lxml
+seaborn
+bs4
+requests
+flask
+streamlit
+memory_profiler
+scikit-learn
+imblearn
+xgboost
+optuna
+shap
