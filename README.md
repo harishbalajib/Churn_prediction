@@ -17,30 +17,30 @@ XGChurn is a robust machine learning project aimed at predicting customer churn 
 ## **Mathematical Foundations**
 
 ### **Churn Prediction**
-The model predicts a binary outcome (\( Y \)) where:
-\[
+The model predicts a binary outcome ($ Y $) where:
+$$
 Y = \begin{cases} 
 1, & \text{if customer churns} \\
 0, & \text{otherwise}
 \end{cases}
-\]
+$$
 
 Using **XGBoost**, the objective is to minimize the log-loss function:
-\[
+$$
 \text{Log-Loss} = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right]
-\]
+$$
 Where:
-- \( y_i \) = True label
-- \( \hat{y}_i \) = Predicted probability
+- $ y_i $ = True label
+- $ \hat{y}_i $ = Predicted probability
 
 ### **Feature Importance**
 Feature importance is derived from **SHAP** values, quantifying each feature's contribution to predictions:
-\[
+$$
 \text{SHAP Value} = \phi_i = f(x) - \mathbb{E}[f(x')]
-\]
+$$
 Where:
-- \( f(x) \) = Model prediction
-- \( \mathbb{E}[f(x')] \) = Average prediction over all features.
+- $ f(x) $ = Model prediction
+- $ \mathbb{E}[f(x')] $ = Average prediction over all features.
 
 ---
 
